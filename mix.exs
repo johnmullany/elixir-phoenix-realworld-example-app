@@ -5,7 +5,7 @@ defmodule RealWorld.Mixfile do
     [
       app: :real_world,
       version: "1.0.0",
-      elixir: "~> 1.8",
+      elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -45,6 +45,7 @@ defmodule RealWorld.Mixfile do
       {:gettext, "~> 0.11"},
       {:proper_case, "~> 1.0.0"},
       {:cowboy, "~> 1.1"},
+      {:plug_cowboy, "~> 1.0.0"},
       {:comeonin, "~> 3.2"},
       {:guardian, "~> 1.0"},
       {:excoveralls, "~> 0.7", only: [:dev, :test]},
